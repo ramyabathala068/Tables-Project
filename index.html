@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAP Academy · Timetables</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ========== HOME PAGE ========== -->
+      <div id="home-page" class="page active">
+        <div class="table-card card-tap">
+          <div class="card-header">
+            <h1>TAP Academy · Timetables</h1>
+            <span class="badge badge-violet">Home</span>
+          </div>
+          <p style="color: #8faec9; margin-bottom: 0.5rem">
+            Select a schedule below to view the full timetable.
+          </p>
+        </div>
+
+        <div class="nav-grid">
+          <div class="nav-card" data-page="java-fullstack">
+            <h3>Java Full Stack</h3>
+            <p>Weekly schedule for the full stack development program</p>
+            <span class="arrow">→</span>
+          </div>
+
+          <div class="nav-card" data-page="inventors">
+            <h3>Language Inventors</h3>
+            <p>Creators of popular programming languages</p>
+            <span class="arrow">→</span>
+          </div>
+
+          <div class="nav-card" data-page="skills">
+            <h3>Skills Matrix</h3>
+            <p>Skills mapped to each engineer</p>
+            <span class="arrow">→</span>
+          </div>
+
+          <div class="nav-card" data-page="famous-people">
+            <h3>Famous People</h3>
+            <p>Notable engineers and the companies they worked for</p>
+            <span class="arrow">→</span>
+          </div>
+
+          <div class="nav-card" data-page="tap-university">
+            <h3>TAP University</h3>
+            <p>Complete combined timetable for CS & Electronics</p>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== JAVA FULL STACK PAGE ========== -->
+      <div id="java-fullstack" class="page">
+        <span class="back-link" data-page="home-page"
+          >← Back to all timetables</span
+        >
+        <div class="table-card card-java">
+          <div class="card-header">
+            <h2>Java Full Stack Development</h2>
+            <span class="badge badge-blue">TAP Academy</span>
+          </div>
+          <table>
+            <thead>
+              <caption>
+                <strong>JAVA FULL STACK DEVELOPMENT — TAP ACADEMY</strong>
+              </caption>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Day</th>
+                <th>9-10 AM</th>
+                <th>10-11 AM</th>
+                <th>11-12 AM</th>
+                <th>1-2 PM</th>
+                <th>2-4 PM</th>
+              </tr>
+              <tr>
+                <th>Monday</th>
+                <td>MySQL</td>
+                <td>Java</td>
+                <td>SoftSkills</td>
+                <td rowspan="5">Lunch Break</td>
+                <td>Mock</td>
+              </tr>
+              <tr>
+                <th>Tuesday</th>
+                <td colspan="2">Project Class</td>
+                <td>Programming</td>
+                <td>CSS</td>
+              </tr>
+              <tr>
+                <th>Wednesday</th>
+                <td>HTML</td>
+                <td>Python</td>
+                <td>DSA</td>
+                <td rowspan="2">Front End Project</td>
+              </tr>
+              <tr>
+                <th>Thursday</th>
+                <td>Java</td>
+                <td colspan="2">React JS</td>
+              </tr>
+              <tr>
+                <th>Friday</th>
+                <td>Programming</td>
+                <td>Java</td>
+                <td>DSA</td>
+                <td>JavaScript</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <th colspan="6" style="text-align: center">
+                Note: Friday 2-4 PM is optional activity slot
+              </th>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <!-- ========== INVENTORS PAGE ========== -->
+      <div id="inventors" class="page">
+        <span class="back-link" data-page="home-page"
+          >← Back to all timetables</span
+        >
+        <div class="table-card card-inventors">
+          <div class="card-header">
+            <h2>Language Inventors</h2>
+            <span class="badge badge-green">Reference</span>
+          </div>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Language</th>
+              <th>Year</th>
+            </tr>
+            <tr>
+              <td>James</td>
+              <td>Java</td>
+              <td>1991</td>
+            </tr>
+            <tr>
+              <td>Guido</td>
+              <td>Python</td>
+              <td>1972</td>
+            </tr>
+            <tr>
+              <td>Dennis</td>
+              <td>C</td>
+              <td>1972</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- ========== SKILLS PAGE ========== -->
+      <div id="skills" class="page">
+        <span class="back-link" data-page="home-page"
+          >← Back to all timetables</span
+        >
+        <div class="table-card card-inventors">
+          <div class="card-header">
+            <h2>Skills Matrix</h2>
+            <span class="badge badge-green">Reference</span>
+          </div>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th colspan="3">Skills</th>
+            </tr>
+            <tr>
+              <td>James</td>
+              <td>C</td>
+              <td>Java</td>
+              <td>HTML</td>
+            </tr>
+            <tr>
+              <td>Guido</td>
+              <td>C++</td>
+              <td>Python</td>
+              <td>PHP</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- ========== FAMOUS PEOPLE PAGE ========== -->
+      <div id="famous-people" class="page">
+        <span class="back-link" data-page="home-page"
+          >← Back to all timetables</span
+        >
+        <div class="table-card card-famous">
+          <div class="card-header">
+            <h2>Famous People & Companies</h2>
+            <span class="badge badge-amber">History</span>
+          </div>
+          <table>
+            <thead>
+              <caption>
+                <h3 style="margin-bottom: 0.25rem">Notable Engineers</h3>
+              </caption>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Name</th>
+                <th>Companies</th>
+              </tr>
+              <tr>
+                <td rowspan="3">James</td>
+                <td>Sun MicroSystems</td>
+              </tr>
+              <tr>
+                <td>Oracle</td>
+              </tr>
+              <tr>
+                <td>Liquid Robotics</td>
+              </tr>
+              <tr>
+                <td rowspan="3">Guido</td>
+                <td>Google</td>
+              </tr>
+              <tr>
+                <td>Dropbox</td>
+              </tr>
+              <tr>
+                <td>Microsoft</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <td colspan="2">
+                NOTE: all companies are historical / illustrative
+              </td>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <!-- ========== TAP UNIVERSITY PAGE ========== -->
+      <div id="tap-university" class="page">
+        <span class="back-link" data-page="home-page"
+          >← Back to all timetables</span
+        >
+        <div class="table-card card-tap">
+          <div class="card-header">
+            <h2>TAP University Timetable</h2>
+            <span class="badge badge-violet">Full Schedule</span>
+          </div>
+          <table class="timetable-mega">
+            <tr>
+              <th
+                colspan="14"
+                style="
+                  text-align: center;
+                  background: #1f3145;
+                  font-size: 0.95rem;
+                "
+              >
+                TAP Timetable — Spring Semester
+              </th>
+            </tr>
+            <tr>
+              <th colspan="7" style="text-align: center; background: #1e3a5e">
+                Computer Science
+              </th>
+              <th colspan="7" style="text-align: center; background: #1e3a5e">
+                Electronics
+              </th>
+            </tr>
+            <tr>
+              <th>Day</th>
+              <th>Session 1<br />(9:00 - 10:30)</th>
+              <th>Session 2<br />(10:45 - 12:15)</th>
+              <th>Session 3<br />(1:00 - 2:30)</th>
+              <th>Session 4<br />(2:45 - 4:15)</th>
+              <th>Session 5<br />(4:30 - 6:00)</th>
+              <th>Remarks</th>
+              <th>Day</th>
+              <th>Session 1<br />(9:00 - 10:30)</th>
+              <th>Session 2<br />(10:45 - 12:15)</th>
+              <th>Session 3<br />(1:00 - 2:30)</th>
+              <th>Session 4<br />(2:45 - 4:15)</th>
+              <th>Session 5<br />(4:30 - 6:00)</th>
+              <th>Remarks</th>
+            </tr>
+            <tr>
+              <th rowspan="2">Mon</th>
+              <td rowspan="2">DS Lab</td>
+              <td>Operating Systems</td>
+              <td rowspan="2">Project Work</td>
+              <td>AI</td>
+              <td rowspan="2">DBMS</td>
+              <td rowspan="2">Lab Session</td>
+              <th rowspan="2">Mon</th>
+              <td>Basic Electronics</td>
+              <td rowspan="2">Circuit Lab</td>
+              <td rowspan="2">Project Work</td>
+              <td>Microcontrollers</td>
+              <td>Signal Processing</td>
+              <td rowspan="2">Lab Work</td>
+            </tr>
+            <tr>
+              <td>Compiler Design</td>
+              <td>AI Continued</td>
+              <td>Digital Systems</td>
+              <td>Analog Comm</td>
+              <td>Embedded</td>
+            </tr>
+            <tr>
+              <th>Wed</th>
+              <td>OS Lab</td>
+              <td>Web Tech</td>
+              <td colspan="2">Mini Project</td>
+              <td>ML</td>
+              <td>Guest Lecture</td>
+              <th>Wed</th>
+              <td>Signals</td>
+              <td rowspan="2">Embedded Lab</td>
+              <td>Robotics</td>
+              <td colspan="2">IoT Workshop</td>
+              <td>Talk Session</td>
+            </tr>
+            <tr>
+              <th>Fri</th>
+              <td colspan="2">Cloud Computing Workshop</td>
+              <td>AI Lab</td>
+              <td colspan="2">Coding Competition</td>
+              <td>Free Slot</td>
+              <th>Fri</th>
+              <td>Electronics Design</td>
+              <td>Robotics Continued</td>
+              <td colspan="2">Seminar</td>
+              <td>Free Slot</td>
+            </tr>
+          </table>
+          <div class="note">
+            All labs & workshops are held in respective blocks.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Simple client-side page router
+      (function () {
+        const pages = document.querySelectorAll(".page");
+
+        function showPage(id) {
+          pages.forEach((p) => p.classList.remove("active"));
+          const target = document.getElementById(id);
+          if (target) {
+            target.classList.add("active");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        }
+
+        // Navigation cards on home
+        document.querySelectorAll(".nav-card").forEach((card) => {
+          card.addEventListener("click", () => {
+            showPage(card.dataset.page);
+          });
+        });
+
+        // Back links
+        document.querySelectorAll(".back-link").forEach((link) => {
+          link.addEventListener("click", () => {
+            showPage(link.dataset.page);
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
